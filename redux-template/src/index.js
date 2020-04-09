@@ -11,9 +11,10 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 //Components
 import BaseLayout from "./components/layout/BaseLayout";
 import App from "./App";
+import Container from "./components/Container";
 
 //Root Reducer
-import rootReducer from "../reducers/rootReducer";
+import rootReducer from "./reducers/rootReducer";
 
 //Redux Store
 let store = createStore(
@@ -27,6 +28,7 @@ ReactDOM.render(
       <BaseLayout>
         <Switch>
           <Route exact path="/" component={App} />
+          <Route exact path="/container" component={Container} />
         </Switch>
       </BaseLayout>
     </BrowserRouter>

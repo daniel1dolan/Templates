@@ -13,7 +13,7 @@ class Container extends Component {
         <br />
         Array:
         {this.props.tempArr.map((item, index) => {
-          return item;
+          return <li>{item}</li>;
         })}
         <br />
         <button onClick={() => this.props.testcase1()}>Update Count</button>
